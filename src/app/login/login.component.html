@@ -1,13 +1,14 @@
 <div class="container">
-    <form>
-      <mat-form-field>
-        <mat-label>Email ou CRECI</mat-label>
-        <input matInput type="text">
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Senha</mat-label>
-        <input matInput type="password">  
-      </mat-form-field>
-      <button mat-raised-button color="primary">Entrar</button>
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+      <img src="../../assets/logo.png">
+      <div class="input formGroup">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required formControlName="email">
+      </div>
+      <div class="input formGroup">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" required formControlName="password">
+      </div>
+      <input type="submit" class="btnEntrar" value="Entrar">
     </form>
-  </div>
+</div>

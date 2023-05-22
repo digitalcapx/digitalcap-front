@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import { LoginService } from './login.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,8 +11,10 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     CommonModule,
-    MatInputModule,
-    MatButtonModule
+    ReactiveFormsModule
+  ],
+  providers: [
+    LoginService
   ],
   exports: [
     LoginComponent

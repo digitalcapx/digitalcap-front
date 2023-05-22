@@ -2,10 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-form {
+.input {
     display: flex;
     flex-direction: column;
+    margin-top: 2vh;
+}
+
+.btnEntrar {
+    text-align: center;
+    background-color: #6E9A8D;
+    color: #fff;
+    height: 5vh;
+    border-radius: 1vh;
+    border: none;
+    width: 100%;
+    margin-top: 2vh;
+    cursor: pointer;
 }
