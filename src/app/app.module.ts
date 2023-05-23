@@ -9,13 +9,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CaptacaoModule } from './captacao/captacao.module';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NavbarModule } from './components/navbar/navbar.module';
+import {MatIconModule} from '@angular/material/icon';
+import { SidebarModule } from './components/sidebar/sidebar.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PageNotFoundComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +27,10 @@ import { ToastrModule } from 'ngx-toastr';
     CaptacaoModule,
     MatInputModule,
     MatButtonModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    NavbarModule,
+    MatIconModule,
+    SidebarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

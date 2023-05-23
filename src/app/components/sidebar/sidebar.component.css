@@ -1,0 +1,35 @@
+.container {
+    width: 20vw;
+    height: 90vh;
+    border-right: 1px solid #555;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #555;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh;
+}
+
+img {
+  padding-bottom: 1.5vh;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.exit, .captacao {
+  display: flex;
+  align-items: center;
+  padding: 1.5vh;
+  cursor: pointer;
+}
+
+mat-icon {
+  padding-right: 1vh;
+}
+  

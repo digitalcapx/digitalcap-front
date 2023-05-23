@@ -1,0 +1,9 @@
+<div class="container">
+    <mat-toolbar>
+        <a href="/captacao">DIGITAL CAP</a>
+        <span class="spacer"></span>
+        <button *ngIf="logged" class="exit" aria-label="Exit button" (click)="logout()">
+            <img src="../../../assets/sair.png" height="16" width="16">
+        </button>
+    </mat-toolbar>
+</div>

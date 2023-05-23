@@ -1,0 +1,24 @@
+mat-toolbar a, a:visited, a:hover, a:active{
+    color: #000;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3vh;
+}
+
+mat-toolbar {
+    background-color: #10282F;
+    height: 10vh;
+}
+
+.exit {
+    background-color: #10282F;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
